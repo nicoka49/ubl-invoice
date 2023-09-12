@@ -27,12 +27,12 @@ class CreditNote extends Invoice
 
     
     /**
-     * @param CreditNoteLine[] $creditNoteLines
+     * @param InvoiceDocumentReference $invoiceDocumentReference
      * @return CreditNote
      */
-    public function setBillingReference(array $billingReference): CreditNote
+    public function setBillingReference(InvoiceDocumentReference $invoiceDocumentReference): CreditNote
     {
-        $this->billingReference = $creditNoteLines;
+        $this->billingReference = $invoiceDocumentReference;
         return $this;
     }
 }
